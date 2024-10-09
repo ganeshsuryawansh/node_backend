@@ -1,0 +1,11 @@
+/.vscode
+/node_modules
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+*.env
+.env
+.env.*
