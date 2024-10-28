@@ -1,5 +1,5 @@
 import { v2 as cloudinary } from "cloudinary";
-import fs from fs;
+import fs from "fs"
 
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -21,3 +21,5 @@ const uploadCloudinary = async (localFilePath) => {
         fs.unlinkSync(localFilePath) // removed the locally saved temparary file as the upload operation got faild
     }
 }
+
+export { uploadCloudinary }
